@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">APKCavoshCafe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_home_text">Inicio</string>
+    <string name="navigation_menu_text">Menú</string>
+    <string name="navigation_favorites_text">Favoritos</string>
+    <string name="navigation_profile_text">Perfil</string>
+    <string name="navigation_cart_text">Carrito</string>
+    <string name="splash_button">Empezar</string>
+    <string name="login_header">Vamos a iniciar sesions!</string>
+    <string name="login_button_login_text">Ingresar</string>
+    <string name="login_button_registrar_text">Registrar</string>
+    <string name="login_edt_email_text">Correo</string>
+    <string name="login_edt_passwordd_text">Contraseña</string>
+    <string name="login_forgot_password_text">Olvidaste tu contraseña?</string>
+    <string name="login_btn_login_text">Iniciar Sesión</string>
+    <string name="register_header_text">Vamos a registrarte!</string>
+    <string name="register_edt_full_name_text">Full Name</string>
+    <string name="register_edt_confirm_password_hint">Confirmar contraseña</string>
+    <string name="register_btn_register_text">Registrar</string>
+    <string name="content_description">contentDescription</string>
+    <string name="ingresar_con">Iniciar Sesion con</string>
+    <string name="verificar_header">Validar código</string>
+    <string name="verificar_btn_verificar_text">Validar código</string>
+    <string name="passwordd_btn_actualizar_text">Actualizar contraseña</string>
+    <string name="olvidastes_btn_enviar_text">Enviar</string>
+</resources>

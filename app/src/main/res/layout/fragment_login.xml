@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/sh_bg_header_police_blue"
+        android:paddingHorizontal="16dp"
+        android:gravity="start|center"
+        android:text="@string/login_header"
+        android:textColor="@color/flesh"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="92dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sh_bg_btn_carmine_pink"
+                android:text="@string/login_button_login_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="5dp"/>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-36dp"
+                android:background="@drawable/sh_bg_btn_bright_gray"
+                android:text="@string/login_button_registrar_text"
+                android:textAllCaps="false"
+                android:textColor="@color/gunmetal"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/tilCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/se_bg_edt_police_blue"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="16dp"
+                android:textColorHint="@color/steel_teal"
+                android:hint="@string/login_edt_email_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/tilPasswordd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@drawable/se_bg_edt_police_blue"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="@color/steel_teal"
+                android:hint="@string/login_edt_passwordd_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtCorreo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:background="@drawable/se_bg_edt_police_blue"-->
+<!--            android:autofillHints=""-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:hint="@string/login_edt_email_text"-->
+<!--            android:textColorHint="@color/steel_teal"-->
+<!--            android:paddingHorizontal="16dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtPasswordd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/se_bg_edt_police_blue"-->
+<!--            android:autofillHints=""-->
+<!--            android:inputType="textPassword"-->
+<!--            android:hint="@string/login_edt_passwordd_text"-->
+<!--            android:textColorHint="@color/steel_teal"-->
+<!--            android:paddingHorizontal="16dp"-->
+<!--            android:drawableEnd="@drawable/ic_email_focused"/>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:id="@+id/edtPasswordd_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/sh_bg_btn_bright_gray"-->
+<!--            android:autofillHints=""-->
+<!--            android:inputType="textPassword"-->
+<!--            android:hint="@string/login_edt_passwordd_text"-->
+<!--            android:textColorHint="@color/steel_teal"-->
+<!--            android:paddingHorizontal="16dp"-->
+<!--            app:helperText="Requierd"-->
+<!--            app:counterEnabled="true"-->
+<!--            app:counterMaxLength="20"-->
+<!--            app:endIconMode="password_toggle"-->
+<!--            app:helperTextTextColor="#FF0000">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                -->
+<!--                android:inputType="textPassword" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:id="@+id/tvOlvidastes"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/login_forgot_password_text"
+            android:textColor="@color/carmine_pink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sh_bg_btn_gunmetal"
+            android:text="@string/login_btn_login_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/carmine_pink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ingresar_con"
+                android:textColor="@color/police_blue"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@color/carmine_pink" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/ivFacebook"
+                android:layout_width="108dp"
+                android:layout_height="72dp"
+                android:layout_gravity="start"
+                android:background="@drawable/sh_bg_btn_flesh"
+                android:contentDescription="@string/content_description"
+                android:padding="16dp"
+                android:src="@drawable/ic_facebook"
+                app:tint="@color/gunmetal" />
+
+            <ImageView
+                android:id="@+id/ivGooglePlus"
+                android:layout_width="108dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sh_bg_btn_flesh"
+                android:contentDescription="@string/content_description"
+                android:padding="16dp"
+                android:src="@drawable/ic_google_plus" />
+
+            <ImageView
+                android:id="@+id/ivApple"
+                android:layout_width="108dp"
+                android:layout_height="72dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/sh_bg_btn_flesh"
+                android:contentDescription="@string/content_description"
+                android:padding="16dp"
+                android:src="@drawable/ic_apple" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si estas registrado?"
+            android:textColor="@color/police_blue"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Registrate ahora"
+            android:textColor="@color/carmine_pink"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</FrameLayout>

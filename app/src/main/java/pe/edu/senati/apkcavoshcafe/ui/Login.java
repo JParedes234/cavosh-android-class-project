@@ -1,0 +1,54 @@
+package pe.edu.senati.apkcavoshcafe.ui;
+
+import android.content.Context;
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import pe.edu.senati.apkcavoshcafe.R;
+import pe.edu.senati.apkcavoshcafe.databinding.FragmentLoginBinding;
+
+public class Login extends Fragment {
+    FragmentLoginBinding binding;
+    Context context;
+    View view;
+    NavController navController;
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        return view = binding.getRoot();
+
+
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        context = getContext();
+        navController = Navigation.findNavController( view );
+
+        binding.tvOlvidastes.setOnClickListener(v -> navController.navigate( R.id.navigation_olvidastes ));
+        binding.btnRegistrar.setOnClickListener(v -> navController.navigate( R.id.navigation_registrar ));
+        binding.tvRegistrar.setOnClickListener(v -> navController.navigate( R.id.navigation_registrar ));
+        binding.btnIniciarSesion.setOnClickListener(v -> btnIniciarSesion_Click() );
+    }
+
+    void btnIniciarSesion_Click() {
+    }
+}

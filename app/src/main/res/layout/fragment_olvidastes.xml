@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Olvidastes">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/sh_bg_header_police_blue"
+        android:paddingHorizontal="16dp"
+        android:gravity="start|center"
+        android:text="Recuperar contraseña"
+        android:textColor="@color/flesh"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/tilCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-96dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_gravity="center"
+        app:endIconMode="clear_text"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/se_bg_edt_police_blue"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:maxLength="30"
+            android:textColorHint="@color/steel_teal"
+            android:hint="@string/login_edt_email_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sh_bg_btn_gunmetal"
+        android:text="@string/olvidastes_btn_enviar_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</FrameLayout>
